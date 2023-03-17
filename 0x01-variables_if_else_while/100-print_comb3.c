@@ -6,7 +6,7 @@
 int main(void)
 {
 	int n;
-        int m;
+	int m;
 
 for (n = 0; n <= 9; n++)
 {
