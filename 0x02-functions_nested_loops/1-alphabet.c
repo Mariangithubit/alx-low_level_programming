@@ -3,7 +3,7 @@
  * print_alphabet - \ Description of function
  * Return: 0
  */
-void prints the alphabet, in lowercase(void)
+void print_alphabet(void)
 {
 	int n;
 
