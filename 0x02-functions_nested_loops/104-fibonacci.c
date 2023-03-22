@@ -49,7 +49,10 @@ int main(void)
 		if (count != 98)
 			printf(",");
 		else
+		{
 			printf("\n");
+			printf(" ");
+		}
 	}
 	return (0);
 }
