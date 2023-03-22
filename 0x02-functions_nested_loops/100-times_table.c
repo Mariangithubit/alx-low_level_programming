@@ -2,13 +2,12 @@
 /**
  * print_times_table -\ prints the n times table, starting with 0
  * @n: the number should starting with it
- * Return: 0
  */
 void print_times_table(int n)
 {
 	int prod, mult, num;
 
-	if (n >= 15 && n <= 0)
+	if (n >= 15 && n >= 0)
 	{
 		for (num = 0; num <= n; num++)
 		{
