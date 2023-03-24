@@ -5,8 +5,9 @@
  * Return: 0
  */
 void print_line(int n)
+
 {
-	int L;
+	int x;
 
 	if (n <= 0)
 	{
@@ -14,9 +15,9 @@ void print_line(int n)
 	}
 	else
 	{
-		for (L = 0; L < n; L++)
+		for (x = 0; x < n; x++)
 		{
-			_putchar(95);
+			_putchar(_);
 		}
 			_putchar('\n');
 	}
