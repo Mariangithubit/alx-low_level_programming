@@ -4,7 +4,7 @@
  * @n: the number of times the character
  * Return: 0
  */
-void print_line(int n);
+void print_line(int n)
 {
 	int x;
 
@@ -14,7 +14,7 @@ void print_line(int n);
 	}
 	else
 	{
-		for( x = 0; x < n; x++)
+		for (x = 0; x < n; x++)
 		{
 			_putchar('_');
 		}
