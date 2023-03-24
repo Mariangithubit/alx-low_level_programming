@@ -2,6 +2,7 @@
 /**
  * print_line -\draws a straight line in the terminal.
  * @n: the number of times the character
+ * Return: 0
  */
 void print_line(int n)
 {
@@ -13,9 +14,9 @@ void print_line(int n)
 	}
 	else
 	{
-		for (L == 1; L < n; L++)
+		for (L = 0; L < n; L++)
 		{
-			_putchar('_');
+			_putchar(95);
 		}
 			_putchar('\n');
 	}
