@@ -3,12 +3,11 @@
 /**
  * print_number - prints an integer
  * @n: an integer
- * Return: Nothing!
+ * Return: 0
  */
 void print_number(int n)
-
 {
-	unsigned int k = n;
+	int k = n;
 
 	if (n < 0)
 	{
