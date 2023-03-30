@@ -4,7 +4,7 @@
  * @n1: the first number
  * @n2: the second number
  * @r: the result
- * @size_r: the size of buffer
+ * @size_r: the length of the result
  * Return: sum
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
@@ -22,7 +22,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (l + 1 > size_r)
 		return (0);
 	r[l] = '\0';
-	for (k = l - 1; k > 0; k--)
+	for (k = l - 1; k >= 0; k--)
 	{
 		i--;
 		j--;
@@ -35,7 +35,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		else
 			s = 0;
 		r[k] = (f + s + d) % 10 + '0';
-		d = (f + s + d) / d;
+		d = (f + s + d) / 10;
 	}
 	if (d == 1)
 	{
