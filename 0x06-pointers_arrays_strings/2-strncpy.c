@@ -4,7 +4,7 @@
  * @dest: the destination copy to
  * @src: the source copy from
  * @n: number of byte
- * Return: 0
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -19,5 +19,5 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = '\0';
 		i++;
 	}
-	return (0);
+	return (dest);
 }
