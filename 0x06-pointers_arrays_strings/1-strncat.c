@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strncat -  concatenates a specific number from the source strings.
+ *_strncat - concatenates a specific number from the source strings.
  * @dest: the destination string
  * @src: the source string
  * @n: number of character should be appended
