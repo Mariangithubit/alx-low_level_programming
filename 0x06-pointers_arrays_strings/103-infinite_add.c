@@ -3,7 +3,7 @@
  * infinite_add - adds two numbers
  * @n1: the first number
  * @n2: the second number
- * @r: the buffer
+ * @r: the result
  * @size_r: the size of buffer
  * Return: sum
  */
