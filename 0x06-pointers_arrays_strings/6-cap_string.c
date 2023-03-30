@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * isLower - lowercase in ascii
  * @c: the characher
