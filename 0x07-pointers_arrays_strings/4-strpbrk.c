@@ -12,17 +12,17 @@ char *_strpbrk(char *s, char *accept)
 	char *t;
 
 	while (s[i] != '\0')
-		i++;
 	{
 		while (accept[f] != '\0')
-			f++;
 		{
 			if (accept[f] == s[i])
 			{
 				t = &s[i];
 				return (t);
 			}
+			f++;
 		}
+		i++;
 	}
 	return (0);
 }
