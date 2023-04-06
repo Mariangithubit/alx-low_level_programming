@@ -1,8 +1,6 @@
 #include "main.h"
 /**
- * is_palindrome - the palindrome
  * last_input - the last char
- * check - check if the string is plaindorm
  * @s: the string
  * Return: 0
  */
@@ -17,7 +15,7 @@ int last_input(char *s)
 	return (r);
 }
 /**
- * is_palindrome - check if a string is a palindrome
+ * is_palindrome - the palindrome
  * @s: the string
  * Return: 0 or 1
  */
@@ -28,7 +26,7 @@ int is_palindrome(char *s)
 	return (check(s, 0, end - 1, end % 2));
 }
 /**
- * check - check for everything
+ * check - check if the string is plaindorm
  * @s: the string
  * @start: the start of string
  * @end: the end of string
