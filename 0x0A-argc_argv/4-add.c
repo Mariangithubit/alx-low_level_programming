@@ -11,14 +11,13 @@ int main(int argc, char *argv[])
 	int n = 0;
 	char *j;
 
-	while (argc--)
+	while (--argc)
 	{
 		for (j = argv[argc]; *j; j++)
 			if (*j < 48 || *j > 57)
-				printf("Error\n");
-		return (1);
+				return (printf("Error\n"), 1);
 		n += atoi(argv[argc]);
 	}
 	printf("%d\n", n);
 	return (0);
-}	
+}
