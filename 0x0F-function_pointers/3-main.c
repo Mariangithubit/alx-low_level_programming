@@ -5,10 +5,10 @@
  * @argv: the vector of argument
  * Return: 0
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv)
 {
-	(void)(argc);
-	int a, b;
+	int a;
+	int b;
 	char *p;
 
 	if (argc != 4)
@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 	p = (argv[2]);
-	if (p[1] != '\0' || get_op_fun(p) == NULL)
+	if (p[1] != '\0' || get_op_func(p) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
