@@ -4,10 +4,9 @@
 #include <stdlib.h>
 /**
  * struct op - Struct op
- *
  * @op: The operator
  * @f: The function associated
- */i
+ */
 typedef struct op
 {
 	char *op;
