@@ -1,13 +1,15 @@
 #include "3-calc.h"
 /**
  * main - the main function
- * @argc: the osurce of argument
+ * @argc: the source of argument
  * @argv: the vector of argument
  * Return: 0
  */
 int main(int argc, char **argv)
 {
-	int (*op_func)(int, int), a, b;
+	(void)(argc);
+	int a, b;
+	char *p;
 
 	if (argc != 4)
 	{
@@ -16,8 +18,8 @@ int main(int argc, char **argv)
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-	op_func = get_op_func(argv[2]);
-	if (!op_func)
+	p = (argv[2]);
+	if (p[1] != '\0' || get_op_fun(p) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
@@ -27,6 +29,6 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(100);
 	}
-	printf("%d\n", op_func(a, b));
+	printf("%d\n", get_op_func(p)(a, b));
 	return (0);
 }
