@@ -18,7 +18,7 @@ void format_int(char *separator, va_list p)
 	printf("%s%d", separator, va_arg(p, int));
 }
 /**
- * format_float - format double
+ * format_float - format float
  * @separator: the string
  * @p: pointer of argument
  */
@@ -72,6 +72,6 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-	printf("/n");
+	printf("\n");
 	va_end(p);
 }
