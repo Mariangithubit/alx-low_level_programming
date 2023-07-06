@@ -13,7 +13,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *temp = NULL;
 	unsigned long int index = 0;
 
-	if (!h || !key || !(*key) || !value)
+	if (!ht || !key || !(*key) || !value)
 		return (0);
 
 	while (temp && strcmp(temp->key, key) != 0)
